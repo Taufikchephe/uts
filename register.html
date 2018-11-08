@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keyword" content="bukan wifi.id">
+	<meta name="description" content="register page">
+	<title>Register BUKAN WIFI.ID</title>
+</head>
+<body>
+<header>
+		   <img align="right" width="25%" height="100px" src="img/logo.png"></td>
+<nav>
+ 	<table width="100%" border="1" align="center" bgcolor="#f3f3f3">
+ 	<tr> 
+ 		<th> <a href="index.html"> Home </a> </th> 
+ 		<th> <a href="produk.html"> Produk </a> </th>
+ 		<th> <a href="index.html#1"> Hubungi </a></th>
+ 		<th>  <a href="register.html">Daftar</a> </th>
+ 		   </table>
+	</table>
+</nav>
+</header>
+	<h1>Form Register Pelanggan</h1>
+<form action="register.php" method="post">
+	<fieldset> 
+	<legend>Data Personal</legend>
+		<table width="50%">
+			<tr>
+				<td>Nama Lengkap</td>
+				<td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td> <textarea name="alamat" rows="2" cols="30"></textarea></td>
+			</tr>
+			<tr>
+				<td>No Identitas</td>
+				<td> <select name="no-id">
+						<option value="KTP">KTP</option>
+						<option value="SIM">SIM</option>
+						<option value="PASSPORT">Passport</option>
+
+					</select></td>
+					<td> <input type="text" name="no-id" maxlength="16"></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir</td>
+				<td><input type="date" name="date"></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td><input type="radio" name="kelamin" value="L">Laki-laki
+				<input type="radio" name="kelamin" value="P">Prempuan</td>
+			</tr>
+			<tr>
+				<td>Nomor HandPhone</td>
+				<td><input type="text" name="hp" maxlength="14"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+
+
+
+		</table>
+
+	</fieldset>
+	<fieldset>
+		<legend>Data Wifi</legend>
+		<table width="50%">
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="Password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Pilih Paket</td>
+				<td><select name="paket">
+					<option value="PU1hr">Paket Unlimited 1 Hari</option>
+					<option value="PU1m">Paket Unlimited 1 Minggu</option>
+					<option value="PU1b">Paket Unlimited 1 Bulan</option>
+					<option value="PQ1hr">Paket Quota 200 MB/1 hari</option>
+					<option value="PQ2hr">Paket Quota 500 MB/2 hari</option>
+					<option value="PQ1m">Paket Quota 1 GB/1 Minggu</option>
+					<option value="PQ2m">Paket Quota 2 GB/2 Minggu</option>
+					<option value="PQ1b">Paket Quota 4 GB/1 Bulan</option>
+
+				</select></td>
+				
+		 	
+		 		
+		 	
+			</tr>
+			<tr>
+		 		<th align="LEFT"><input type="submit" name="REGISTER"> </th>
+		 		<th align="LEFT"><input type="RESET" name="RESET"> </th>
+		 		
+		 	</tr>
+		</table>
+	</fieldset>
+	
+</form>
+
+</body>
+</html>
